@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <app-signin></app-signin> -->
+<div class="col-sm-12" >
+  <nav class='navbar navbar-expand navbar-light bg-light'>
+      <div class="col-sm-2">
+        <a class='navbar-brand'><img src="assets/images/logo.JPG" alt="EShoppingZone"></a>
+      </div>
+      <div class="col-sm-3">
+        <ul class='nav nav-pills'>
+          <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/home']">Home</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-primary dropbtn">Categories</button>
+                <div class="dropdown-content">
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/electronics']">Electronics</a>
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/books']">Books&Stationary</a>
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/clothing']">Clothing</a>
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/footwear']">FootWear</a>
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/sports']">Sports</a>
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/kitchen']">Home & Kitchen</a>
+                  <a class='nav-link' routerLinkActive='active' [routerLink]="['/bags']">Bags & Luggage</a>
+                </div>
+              </div>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="col-sm-4 search-container">
+    <form action="">
+      <input type="text" placeholder="Search.." name="search" id="search">
+      <button type="submit" ><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+    <div class="col-sm-4">
+    <ul class='nav nav-pills'>
+    <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/signin']">Sign In</a></li>
+    <!-- <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/signup']">Sign Up</a></li> -->
+    <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/cart']">
+      <i class="fa fa-shopping-cart">Cart</i></a></li>
+    </ul>
+    </div>
+  </nav>
+  </div>
+ 
+<router-outlet></router-outlet>
