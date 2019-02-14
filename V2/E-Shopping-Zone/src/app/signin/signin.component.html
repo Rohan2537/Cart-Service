@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- <form>
+            <table align="center">
+                    <tr>
+                            <td><label>Enter Email/Mobile No </label></td>
+                            <td><input type="text" name="loginId" value="" required autofocus></td>
+                    </tr>   
+                    <tr>
+                            <td><label>Enter Password:</label></td>
+                            <td><input type="password" name="password" value="" required></td>
+                    </tr> 
+                    <tr>    
+                        <td align="right"><input class="one"type="submit" value="Login" name="submit" ></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><a class='nav-link' routerLinkActive='active' [routerLink]="['/forgetpassword']">Forgot Password?</a></td>
+                    </tr>
+                </table>
+</form> -->
+<div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="vl">
+              <span class="vl-innertext">or</span>
+            </div>
+      
+            <div class="col">
+              <a href="https://github.com/login" class="github btn">
+                <i class="fa fa-github"></i> Login with GitHub
+               </a>
+              <a href="https://in.linkedin.com/" class="linkedin btn">
+                <i class="fa fa-linkedin"></i> Login with LinkedIn
+              </a>
+              
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p>Or sign in manually:</p>
+              </div>
+      
+              <input type="text" name="username" placeholder="Email Id/Mobile Number" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" value="Login">
+            </div>
+            
+          </div>
+        </form>
+   
+      
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a class='nav-link btn' routerLinkActive='active' [routerLink]="['/signup']" style="color:white">Sign up</a>
+          </div>
+          <div class="col">
+            <a class='nav-link btn' routerLinkActive='active' [routerLink]="['/forgotpassword']" style="color:white">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
