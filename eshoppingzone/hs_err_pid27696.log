@@ -1,0 +1,168 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=27696, tid=0x0000000000004dec
+#
+# JRE version:  (8.0_121-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.121-b13 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002d85800):  JavaThread "Unknown thread" [_thread_in_vm, id=19948, stack(0x0000000002c60000,0x0000000002d60000)]
+
+Stack: [0x0000000002c60000,0x0000000002d60000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002d85800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=19948, stack(0x0000000002c60000,0x0000000002d60000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5580000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5580000,0x00000000d5626670,0x00000000d7600000)
+  from space 5120K, 0% used [0x00000000d7b00000,0x00000000d7b00000,0x00000000d8000000)
+  to   space 5120K, 0% used [0x00000000d7600000,0x00000000d7600000,0x00000000d7b00000)
+ ParOldGen       total 87552K, used 0K [0x0000000080000000, 0x0000000085580000, 0x00000000d5580000)
+  object space 87552K, 0% used [0x0000000080000000,0x0000000080000000,0x0000000085580000)
+ Metaspace       used 746K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012250000,0x0000000012660000] byte_map_base: 0x0000000011e50000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000075fdb6d0
+ Begin Bits: [0x0000000012d10000, 0x0000000014d10000)
+ End Bits:   [0x0000000014d10000, 0x0000000016d10000)
+
+Polling page: 0x0000000002d60000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002e90000, 0x0000000003100000, 0x0000000011e90000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.032 loading class java/lang/Short
+Event: 0.032 loading class java/lang/Short done
+Event: 0.032 loading class java/lang/Integer
+Event: 0.033 loading class java/lang/Integer done
+Event: 0.033 loading class java/lang/Long
+Event: 0.033 loading class java/lang/Long done
+Event: 0.034 loading class java/lang/NullPointerException
+Event: 0.034 loading class java/lang/NullPointerException done
+Event: 0.034 loading class java/lang/ArithmeticException
+Event: 0.034 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff70fdd0000 - 0x00007ff70fe07000 	C:\Program Files\Java\jre1.8.0_121\bin\javaw.exe
+0x00007ffa34800000 - 0x00007ffa349e1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffa33a40000 - 0x00007ffa33af2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffa317d0000 - 0x00007ffa31a43000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffa34440000 - 0x00007ffa344e1000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffa34730000 - 0x00007ffa347ce000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffa31fc0000 - 0x00007ffa3201b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffa33c20000 - 0x00007ffa33d44000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffa32020000 - 0x00007ffa321b0000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffa31330000 - 0x00007ffa31350000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffa33be0000 - 0x00007ffa33c08000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffa31a50000 - 0x00007ffa31be2000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffa31bf0000 - 0x00007ffa31c8f000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffa31670000 - 0x00007ffa3176a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffa2ed50000 - 0x00007ffa2efb9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.407_none_fb449d63306391e9\COMCTL32.dll
+0x00007ffa31c90000 - 0x00007ffa31fb2000 	C:\WINDOWS\System32\combase.dll
+0x00007ffa31400000 - 0x00007ffa3147a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffa34700000 - 0x00007ffa3472d000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffa309b0000 - 0x00007ffa30a0d000 	C:\Program Files\Citrix\System32\MfApHook64.dll
+0x00007ffa2fef0000 - 0x00007ffa2ff1b000 	C:\Program Files\Citrix\ICAService\CtxDodHook64.dll
+0x00007ffa308d0000 - 0x00007ffa30902000 	C:\Program Files\Citrix\ICAService\picaFullScreenHookX64.dll
+0x00007ffa30310000 - 0x00007ffa3035e000 	C:\Program Files\Citrix\ICAService\ShellHook64.dll
+0x00007ffa321b0000 - 0x00007ffa335ef000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffa312e0000 - 0x00007ffa31329000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffa34390000 - 0x00007ffa34439000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffa30bd0000 - 0x00007ffa312dd000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffa33b00000 - 0x00007ffa33b51000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffa30b40000 - 0x00007ffa30b51000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffa30bb0000 - 0x00007ffa30bcf000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffa30b60000 - 0x00007ffa30bac000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffa30b10000 - 0x00007ffa30b1a000 	C:\WINDOWS\System32\FLTLIB.DLL
+0x00007ffa30140000 - 0x00007ffa302bc000 	C:\Program Files\Citrix\ICAService\SCardHook64.dll
+0x00007ffa2fe10000 - 0x00007ffa2fe3a000 	C:\Program Files\Citrix\ICAService\cxinjime64.dll
+0x00007ffa2fdc0000 - 0x00007ffa2fe08000 	C:\Program Files\Citrix\ICAService\PicaWtsHook64.dll
+0x00000000756e0000 - 0x00000000757b2000 	C:\Program Files\Java\jre1.8.0_121\bin\msvcr100.dll
+0x00000000757c0000 - 0x000000007605b000 	C:\Program Files\Java\jre1.8.0_121\bin\server\jvm.dll
+0x00007ffa33c10000 - 0x00007ffa33c18000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffa21780000 - 0x00007ffa21789000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffa2bd20000 - 0x00007ffa2bd43000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffa34690000 - 0x00007ffa346fc000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffa307c0000 - 0x00007ffa307ca000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffa2bcf0000 - 0x00007ffa2bd1a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x0000000076680000 - 0x000000007668f000 	C:\Program Files\Java\jre1.8.0_121\bin\verify.dll
+0x00000000762f0000 - 0x0000000076319000 	C:\Program Files\Java\jre1.8.0_121\bin\java.dll
+0x00000000762d0000 - 0x00000000762e6000 	C:\Program Files\Java\jre1.8.0_121\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=60877 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Xverify:none -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 
+java_command: com.eshoppingzone.eshoppingzone.EshoppingzoneApplication --spring.output.ansi.enabled=always
+java_class_path (initial): C:\Users\venpuram\Desktop\E Shopping Zone Services\eshoppingzone\target\classes;C:\Users\venpuram\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.1.2.RELEASE\spring-boot-starter-security-2.1.2.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.2.RELEASE\spring-boot-starter-2.1.2.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.2.RELEASE\spring-boot-starter-logging-2.1.2.RELEASE.jar;C:\Users\venpuram\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\venpuram\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\venpuram\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;C:\Users\venpuram\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\venpuram\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\venpuram\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\venpuram\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\venpuram\.m2\repository\org\springframework\spring-aop\5.1.4.RELEASE\spring-aop-5.1.4.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\spring-beans\5.1.4.RELEASE\spring-beans-5.1.4.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\security\spring-security-config\5.1.3.RELEASE\spring-security-config-5.1.3.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\spring-context\5.1.4.RELEASE\spring-context-5.1.4.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\security\spring-security-web\5.1.3.RELEASE\spring-security-web-5.1.3.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\spring-expression\5.1.4.RELEASE\spring-expression-5.1.4.RELEASE.jar;C:\Users\venpuram\.m2\repository\org\springframework\boot\spring-boot-starter-ac
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\Python34\;C:\Python34\Scripts;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\WINDOWS\System32\OpenSSH\;C:\Users\venpuram\AppData\Local\Microsoft\WindowsApps;;C:\Users\venpuram\Downloads\spring-tool-suite-3.9.7.RELEASE-e4.10.0-win32-x86_64\sts-bundle\sts-3.9.7.RELEASE;
+USERNAME=venpuram
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 15 Model 6 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.1)
+
+CPU:total 4 (2 cores per cpu, 1 threads per core) family 15 model 6 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, tsc, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8388056k(923220k free), swap 18697820k(5228k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.121-b13) for windows-amd64 JRE (1.8.0_121-b13), built on Dec 12 2016 18:21:36 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Mon Feb 11 09:48:01 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
